@@ -1,0 +1,597 @@
+@import './main__colors';
+
+@mixin main__body{
+    
+    max-width: 100%;
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow-x: hidden !important;
+    background-color: #F8F8F8;
+
+
+    .main__header-menuModal-deskTope-contact{
+        display: none;
+    }
+    
+    .main__body-title-container{
+        display: flex;
+        margin-top: 5px;
+
+        .main__body-title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        width: 100%;
+        height: 40px;
+        font-family: "TT Lakes Neue Trial";
+        color: $titleColor;
+        font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6000000238418579px;
+        }
+.deskTope-header-icons{
+    display: none;
+}
+    }
+    
+    .main__body-text-Ipadcontainer,
+    .main__body-brend-desk-textContain, 
+    .swiper-style-deskText,
+    .main__body-brendText-DeskTope-container{
+        display: none;
+    }
+    .main__body-Ipad-logoPicture{
+        display: none;
+    }
+    .main__body-brendText-Ipadcontainer{
+        display: none;
+    }
+
+// ########################################### swiper - 1 ##############################################
+
+    .swiper-container{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        .mySwiper{
+    width: 100%;
+    .swiper-wrapper {
+        width: 100%;
+        display: flex;
+        gap: -10px !important;
+
+        .swiper-slide {
+            margin-left: 20px;
+            position: relative; /* Добавляем позиционирование */
+        
+            &.swiper-style {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 220px !important;
+                height: 40px;
+                font-family: "TT Lakes Neue Trial";
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                color: $swiperColor;
+                white-space: nowrap;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+        
+            /* Стили для псевдоэлемента ::after */
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -10px;
+                right: -10px;
+                bottom: 0;
+                border: $swiperFocusBorder;
+                border-radius: 5px;
+                opacity: 0;
+                transition: opacity 0.3s;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        
+            /* При наведении на слайд, показываем псевдоэлемент ::after */
+            &:hover::after {
+                opacity: 1;
+            }
+        }
+        
+    .swiper-slide.swiper-style:last-child{
+        margin-left: 20px !important;
+    }
+.swiperOne-style{
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            background-color: $backgColor;
+            color: $swiperColor;
+            font-family: "TT Lakes Neue Trial";
+            width: 246px !important;
+            height: 40px;
+            margin-left: 16px;
+            border-radius: 6px;
+            border: $swiperFocusBorder;
+            white-space: nowrap;
+
+            p{
+                margin-right: 7px;
+            }
+        }
+
+   
+
+
+}
+
+
+.swiper-pagination{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    width: 204px ;
+    height: 12px ;
+    left: 58px;
+
+
+    .swiper-pagination-bullet {
+        width: 12px ;
+        height: 12px ;
+        background-color:$paginationBullet ;
+        border-radius: 50%;
+        margin: 0 5px;
+        }
+    
+    .swiper-pagination-bullet-active {
+        background-color: $paginationBulFocus ;
+        opacity: 1 ; 
+        border-radius: 50% ;
+    }
+
+
+}
+}
+    
+}
+.swiper-wrapper-desk-text{
+    display: none ;
+  }
+
+.main__body-text{
+        width: 100%;
+        height: 90px;
+        margin-top: 24px;
+        margin-left: 16px;
+        white-space: pre-line;
+        font-family: "TT Lakes Neue Trial";
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        color: $titleColor;
+    }
+    .main__body-brend-desk-textContain-ShowText1{
+        display: none;
+    }
+
+    .main__body-brend-desk-textContain-ShowText1.show{
+        display: block;
+        width: 100%;
+        height: 90px;
+        margin-top: 24px;
+        margin-left: 16px;
+        white-space: pre-line;
+        font-family: "TT Lakes Neue Trial";
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        color: $titleColor;
+    }
+    .main__body-brend-desk-textContainBtn1{
+        width: 132px;
+        height: 24px;
+        margin-left: 16px;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        font-family: "TT Lakes Neue Trial" ;
+        font-size: 16px;
+  
+        img{
+          width: 15px;
+          height: 15px;
+          margin-top: 3px;
+          margin-left: 3px;
+          margin-right: 3px;
+        }
+    }
+    .main__body-reed-container{
+    display: flex;
+    align-items: center;
+    width: 132px;
+    height: 24px;
+    left: 16px;
+    
+
+    img{
+        width: 7.41px;
+        height: 10.29px;
+        margin-left: 24px;
+}
+
+    p{
+        width: 100px;
+        height: 24px;
+        margin-left:20px;
+        font-family: "TT Lakes Neue Trial";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: left;
+        white-space: nowrap;
+}
+    }
+
+    .main__body-logoPicture{
+    width: 100%;
+    height: 176px;
+    margin-top: 36px; 
+
+    }
+
+
+
+.main__body-brendText-container, .main__body-brendText-container2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    background: $linearGradient;
+
+
+    .main__body-brend-text{
+    display: flex;
+    flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        margin-left: 16px;
+        font-family: "TT Lakes Neue Trial";
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        color: $swiperColor;    
+    }} 
+
+// ######################################## swiper - 2 ####################################################3
+
+.swiper-container{
+
+.swiper-wrapper{
+        display: flex;
+        width: 100%;
+
+        .swiper-wrapper.swiperIpad{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: -30px;
+    }
+    
+    .swiper-slide { 
+    
+        &.slide-type2{
+        flex: none;
+        width: 224px !important;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 16px;
+        border-radius: 6px;
+        border: $slideType2Border;
+        background-color:$backgColor;
+        cursor: pointer;
+        transition: color 0.3s; 
+      
+      &.slide-type2:hover {
+        background-color: rgb(38, 38, 190); /* Пример стиля, который вы можете настроить под свой дизайн */
+    }
+    }
+    }
+    
+    
+    .main_container-iconLogo{
+        margin-left: 30px;
+    }
+    
+    .main_container-iconGo{
+        margin-right: 20px;
+    }
+    .slide-type2-desk-showSlide{
+display: none;
+    }
+    }
+    .swiper-pagination2{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+        width: 204px !important;
+        height: 12px;
+        left: 58px;
+
+
+        .swiper-pagination-bullet {
+            width: 12px !important;
+            height: 12px !important;
+            background: $paginationBullet !important;
+            border-radius: 50%;
+            }
+        
+        .swiper-pagination-bullet-active {
+            background-color:   $paginationBulFocus !important;
+            opacity: 1 !important; 
+            border-radius: 50% !important;
+        }
+
+
+    }
+.main__body-reed-showContainer, .slide-type2-showBtn{
+display: none;
+}
+
+// ########################################### swiper 3   ############################################
+
+.mySwiper3{
+.swiper-slide{
+
+
+&.slide-type3{
+    width: 240px !important;
+    height: 160px !important;
+    margin-left: 16px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background: $backgColor;
+    border: $slideType2Border;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color 0.3s; 
+  
+  &.slide-type3:hover {
+    background-color: rgb(38, 38, 190); /* Пример стиля, который вы можете настроить под свой дизайн */
+}
+
+    .slide-type3-text{
+        font-family: "TT Lakes Neue Trial";
+        font-size: 16px;
+        margin-left: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        margin-right: 40px;
+        margin-bottom: 65px;
+        color: $titleColor;
+    }
+.slide-type3-icon{
+            width: 40px;
+            height: 40px;
+            margin-left: 180px;
+            margin-right: 20px;
+            margin-bottom: 25px;
+    }
+}
+
+}
+
+.swiper-pagination3{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    width: 204px !important;
+    height: 12px;
+    left: 58px;
+
+
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        background: $paginationBullet !important;
+        border-radius: 50%;
+        }
+    
+    .swiper-pagination-bullet-active {
+        background-color:   $paginationBulFocus !important;
+        opacity: 1 !important; 
+        border-radius: 50% !important;
+    }
+
+
+}
+}
+.swiper-slide.slide-type3.ipadText{
+    display: none;
+} 
+
+.main__body-reed-showContainer2{
+    display: none !important;
+}
+
+
+
+// ############################################## 3 swiper -4  ######################################################
+
+.mySwiper4{
+    .swiper-slide{
+        &.slide-type4{
+            margin-top: 30px;
+            width: 260px !important;
+                height: 200px;
+                margin-left: 8px;
+                border-radius: 6px;
+                background-color: $backgColor;
+                cursor: pointer;
+                transition: color 0.3s; 
+            &.slide-type4:hover {
+                background-color: rgb(157, 157, 204); /* Пример стиля, который вы можете настроить под свой дизайн */
+            }
+            .slide-type4-container{
+                display: flex;
+                flex-direction: column;
+                min-height: min-content;
+                margin: 0px;
+                width: 228px;
+                height: 168px;
+                margin-left: 14px;
+
+                img{
+                width: 119px;
+                height: 32px;
+                margin-top: -10px;
+                margin-right: 10px;
+                }
+
+                .slide-type4-button-container{
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .slide-type4-text {
+                    font-family: "TT Lakes Neue Trial";
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: $swiperColor;
+                    margin: 0px;
+                    margin-top: 14px;
+}
+            .slide-type4-textTwo{
+                font-family:"TT Lakes Neue Trial";
+                font-size: 14px;
+                margin-top: 14px;
+                line-height: 18px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: left;
+                color:  $titleColor;
+                margin: 0px;
+                white-space: nowrap;
+            }     
+}
+    }
+    }
+    .swiper-pagination4{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+        width: 204px !important;
+        height: 12px;
+        left: 58px;
+
+
+        .swiper-pagination-bullet {
+            width: 12px !important;
+            height: 12px !important;
+            background: $paginationBullet !important;
+            border-radius: 50%;
+            }
+        
+        .swiper-pagination-bullet-active {
+            background-color:   $paginationBulFocus !important;
+            opacity: 1 !important; 
+            border-radius: 50% !important;
+        }
+
+
+    }
+}
+}
+.main__body-reed-showContainer2Ipad{
+    display: none !important;
+}
+
+.main__body-footer{
+    width: 100%;
+    height: 191.98px;
+    margin-left: 16px;
+    margin-top: 25px;
+    
+    &.main__body-footer-text{
+        font-family: "T Lakes Neue TrialT" !important;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+color:  $titleColor;
+
+    }
+
+    .main__body-footer-text2{
+        font-family: "TT Lakes Neue Trial";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        color:  $titleColor;
+        font-weight: 700;
+       
+        img{
+            width: 24px;
+            height: 27.49px;
+            margin-bottom: -10px;
+        }
+    }
+
+    .main__body-footer-containerTwo{
+        width: 100%;
+        height: 100%;
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-family: "TT Lakes Neue Trial";
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: center;
+color: $swiperColor;
+
+        }
+    }
+}
+.main__body-ipadFooter{
+    display: none !important;
+}
+
+.main__body-reed-showContainer{
+    display: none;
+    }
+.main__body-reed-showContainer2{
+    display: none;
+}
+    .swiper-slide-slide-type3-ipadText{
+        display: none;
+    }
+.main__body-brendText-ipadContainer2{
+    display: none;
+}
+}

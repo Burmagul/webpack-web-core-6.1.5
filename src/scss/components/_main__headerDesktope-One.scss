@@ -1,0 +1,190 @@
+@import './main__colors';
+
+@mixin main__headerDesktope-One { margin:0;
+  padding: 0 !important;
+  margin: 0 !important;
+  .main__header-menuModal-deskTope-contact {
+    display: flex;
+  flex-direction: column;
+  width: 276px; /* Примерная ширина сайт-бара */
+  height: 100%;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: $backgColor;
+  position: fixed;
+  left: 0; /* Фиксация слева */
+  top: 0; /* Фиксация сверху */
+  z-index: 999; /* Чтобы сайт-бар был выше других элементов */
+    .main__header-menuModal-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      margin-top: 20px;
+
+      .main__header-menuModal-header-close {
+        display: none;
+      }
+
+      .main__header-menuModal-header-group {
+        width: 96.55px;
+        height: 50.81px;
+        border: 0.5px;
+        margin-left: 22px;
+      }
+
+      .main__header-menuModal-header-search{
+        margin-right: 10px;
+        transition: background-color 0.3s; /* Плавный переход цвета при изменении фона */
+        width: 40px !important;
+        height: 40px !important;
+        img{
+          transition: filter 0.3s;
+            /* Применение стилей при фокусировке */
+
+        }
+    &:not(:last-child) {
+        margin-right: 10px; 
+    }
+
+    /* Применение стилей при наведении */
+    &:hover {
+      filter: brightness(70%);
+    
+    }
+      }
+    
+    }
+
+    .main__header-menuModal-menu{
+      margin-top: 20px;
+    
+      p {
+        font-family: "TT Lakes Neue Trial";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+        margin-left: 24px;  
+        color: $titleColor;
+        position: relative; /* Добавлено */
+      
+        &:hover {
+            color: rgb(176, 176, 190);
+            &:before {
+                content: url('/src/icons/highlight.svg'); 
+                margin-right: 5px;
+                width: 4px !important;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute; /* Изменено */
+                left: -20px; /* Изменено */
+                bottom: 10px; /* Изменено */
+            }
+        }
+    }
+    
+  }
+  
+}
+
+  .main__header-menuModal-contact{
+    // display: flex !important;
+    width: 196px;
+    height: 100%;
+margin-left: 10px;    
+    .main__header-menuModal-contact-iconsBtns{
+        display: flex;
+margin-top: 20px;
+margin-left: 20px;
+
+.main__header-menuModal-contact-number{
+    font-family:  "TT Lakes Neue Trial";
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    color:   $titleColor;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.main__header-menuModal-contact-chat,
+.main__header-menuModal-contact-message {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    padding: none;
+    margin: none;
+    transition: filter 0.3s; /* Плавный переход фильтра */
+    img {
+        width: 40px;
+        height: 40px;
+        transition: filter 0.3s; /* Плавный переход фильтра для изображения */
+        
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px; 
+    }
+
+    /* Применение стилей при наведении */
+    &:hover {
+        filter: brightness(70%); /* Пример изменения яркости изображения */
+           /* Применение стилей при фокусировке */
+    }
+}
+
+
+
+.main__header-menuModal-contact-profil{
+    width: 40px;
+    height: 40px;
+    margin-left: 9px;
+    // transition: background-color 0.3s; /* Плавный переход цвета при изменении фона */
+    
+    img{
+      transition: filter 0.3s; /* Плавный переход фильтра для изображения */
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px; 
+    }
+
+    /* Применение стилей при наведении */
+    &:hover {
+        filter: brightness(70%); /* Пример изменения яркости изображения */
+    }
+
+    }
+  }
+
+  p{
+    font-family: "TT Lakes Neue Trial";
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.20000000298023224px;
+margin-left: 20px !important;
+
+}
+    .main__header-menuModal-lang{
+    display: flex;
+    gap: 10px;
+    // margin-left: 20px;
+
+    .main__header-menuModal-langRU{
+    color: $swiperColor;
+    }
+    } 
+  }
+
+  .menuModal-contact-container-footer{
+    display: none;
+  }
+
+  .menuModal-contact-container-footer2{
+    display: flex;
+  }
+}

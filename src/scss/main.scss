@@ -1,0 +1,62 @@
+
+@import "./components/main__header";
+@import "./components/main__body";
+@import "./components/main__headerIpad";
+@import "./components/main__bodyIpad";
+
+@import "./components/main__headerDesktope-One";
+@import "./components/main__modalka1";
+@import "./components/main__modalka2";
+@import "./components/main__bodyDeskTope";
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    margin:0 !important;
+    padding: 0 !important;
+  
+    @include main__header;
+    @include main__body;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0;
+    background-color: rgba(248, 248, 248, 1);
+    @include main__headerIpad;
+    @include main__bodyIpad;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  body {
+    .main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(248, 248, 248, 1);
+      width: 100% !important;
+      height: 100%;
+      margin:0;
+      padding: 0 !important;
+
+    display: flex;
+    flex-direction: row !important;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(248, 248, 248, 1);
+    @include main__headerDesktope-One;
+    // @include main__headerDesktope-One;
+    @include main__modalka1;
+    // @include main__modalka1;
+    @include main__modalka2;
+    // @include main__modalka2;
+    @include main__bodyDeskTope;
+    // @include main__bodyDeskTope;
+  }
+  }
+}

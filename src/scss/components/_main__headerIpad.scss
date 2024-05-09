@@ -1,0 +1,190 @@
+@import './main__colors';
+
+@mixin main__headerIpad {
+    width: 100%;
+    height: 88px;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+    .main__headerIcons {
+        width: 99%;
+        height: 88px;
+        border: none !important;
+        background-color: $backgColor;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: hidden !important; 
+        
+        .main__body-menuButton1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 24px !important;
+            border: none;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 40px;
+                height: 40px;
+                transition: filter 0.3s; /* Плавный переход фильтра для изображения */
+            }
+                    &:hover {
+                filter: brightness(70%); /* Пример изменения яркости изображения */
+            }
+            
+        }
+        .main__body-menuButton{
+            display: none;
+        }
+        .main__header-burger {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .main__header-IpadDivider {
+            width: 2px;
+            height: 32px;
+            margin-left: 14px;
+        }
+
+        .main__header-group {
+            width: 96.55px;
+            height: 50.81px;
+            margin-left: 24px;
+            border: 0.5px;
+        }
+
+        .main__header-ipadIcons {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            .main__header-menuModal-contact-chat,
+            .main__header-menuModal-contact-message {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: none;
+                background: none;
+                padding: 0;
+                margin-left: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: filter 0.3s; /* Плавный переход фильтра для изображения */
+                
+                        &:hover {
+                    filter: brightness(70%); /* Пример изменения яркости изображения */
+                }
+                }
+            }
+
+            .main__header-menuModal-contact-chat {
+                margin-left: 110px;
+            }
+
+            .main__header-menuModal-contact-profil {
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+                transition: filter 0.3s; /* Плавный переход фильтра для изображения */
+            
+                    &:hover {
+                filter: brightness(70%); /* Пример изменения яркости изображения */
+            }
+            }
+        }
+
+        .main__header-divider {
+            width: 2px;
+            height: 32px;
+            margin-left: 10px;
+        }
+
+        .main__header-repair,
+        .main__header-checkstatus {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .main__header-checkstatus {
+            margin-right: 15px;
+        }
+    }
+}
+
+.main__header-menuModal{
+    background-color:  $backgColor;   
+    height: 1024px;
+    width: 320px !important;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2) !important;
+
+
+    .main__header-menuModal-header-search{
+        margin-right: 24px;
+    }
+    .main__header-menuModal-header{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 320px;
+        background:$backgColor ;
+
+        .menuModal-closeBtn{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            border-radius: 50%;
+            border: none;
+            margin-top: 20px;
+            margin-left: 10px;
+
+            img{
+                margin: 0;
+            }
+        }
+    }
+    
+    .main__header-menuModal-menu{
+        background-color: $backgColor;   
+        width: 320px;
+        
+.main__header-menuModal-menu-focusText-Container{
+    .main__header-menuModal-menu-focusText{
+        margin-left: 18px;
+        font-size: 16px;
+    }
+}
+    p{
+            font-family:"TT Lakes Neue Trial";
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.20000000298023224px;
+            text-align: left;
+            color:  $titleColor;
+            margin-left: 24px;
+            margin-top: 30px;
+        }
+    }
+    .main__header-menuModal-contact {
+        width: 320px;
+        margin-top: 200px;
+        margin-left: 24px;
+        
+        .main__header-menuModal-contact-number{
+            margin-left: 24px;
+        }
+    }
+    
+}
+
