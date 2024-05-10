@@ -3,7 +3,7 @@ This project represents the markup for a website providing information and servi
 
 Installation Instructions
 Clone the repository:
-git clone https://burmagul.github.io/verstka-5-web-core-5.1.5/
+git clone https://burmagul.github.io/webpack-web-core-6.1.5/
 
 Open the project in a text editor or integrated development environment.
 Open index.html in your web browser.
