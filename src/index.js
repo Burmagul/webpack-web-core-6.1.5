@@ -53,7 +53,7 @@ pagination: {
 
 // ################################   Читать дольше desktop #################################
 
-const svgImage = document.createElement('img');
+let svgImage = document.createElement('img');
 svgImage = './src/icons/icon.svg';
 
 document.addEventListener('DOMContentLoaded', function() {
