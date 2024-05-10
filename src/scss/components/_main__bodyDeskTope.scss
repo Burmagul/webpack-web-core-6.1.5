@@ -20,6 +20,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      width: 100%;
       font-family: "TT Lakes Neue Trial";
       font-size: 1.75rem; // 28px / 16px = 1.75rem
       line-height: 2.5rem; // 40px / 16px = 2.5rem
@@ -44,11 +45,13 @@
         display: flex;
         width: 100%;
         height: 100%;
-        align-items: center;
+        align-items: flex-end;
+        justify-content: flex-end;
         font-size: 1rem; // 16px / 16px = 1rem
         font-weight: 0;
         gap: 0.625rem; // 10px / 16px = 0.625rem
-        margin-left: 9.375rem; // 150px / 16px = 9.375rem
+        margin-right: 0;
+        padding-right: 0.625rem;
         .main__header-repair {
           margin-right: 0.625rem; // 10px / 16px = 0.625rem
         }
@@ -121,6 +124,7 @@
 
 .main__body-brend-desk-textContain {
   display: flex;
+  width: 100%;
   margin-left: 1.625rem; // заменено 26px на 1.625rem
   font-family: "TT Lakes Neue Trial";
   font-size: 0.875rem; // заменено 14px на 0.875rem
@@ -168,8 +172,8 @@
   }
 
   .main__body-Ipad-logoPicture {
-    width: 33.209rem; // заменено 531.35px на 33.209rem
-    height: 19.1875rem; // заменено 307px на 19.1875rem
+    width: 100%; // заменено 531.35px на 33.209rem
+    height: 100%; // заменено 307px на 19.1875rem
     border-radius: 0.9375rem; // заменено 15px на 0.9375rem
     margin-left: 1.5625rem; // заменено 25px на 1.5625rem
   }
@@ -207,7 +211,7 @@
             width: 100%;
             display: grid;
             justify-content: center;
-            grid-template-columns: repeat(4, 15rem); // заменено 240px на 15rem
+            grid-template-columns: repeat(4, minmax(15rem, 1fr)); // заменено 240px на 15rem
             grid-template-rows: repeat(2, 1fr);
             gap: 1.25rem; // заменено 20px на 1.25rem
             margin-left: 0;
@@ -309,7 +313,7 @@
     width: 100% !important;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 15rem); // заменено 240px на 15rem
+    grid-template-columns: repeat(4, minmax(15rem, 1fr)); // заменено 240px на 15rem
     grid-template-rows: repeat(1, 1fr);
     gap: 1.25rem; // заменено 20px на 1.25rem
     margin-left: 0;
