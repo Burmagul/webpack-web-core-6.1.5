@@ -54,7 +54,7 @@ pagination: {
 // ################################   Читать дольше desktop #################################
 
 const svgImage = document.createElement('img');
-svgImage.src = '/icons/icon.svg';
+svgImage.src = 'icons/icon.svg';
 
 document.addEventListener('DOMContentLoaded', function() {
     const showTextBtn = document.querySelector('.main__body-brend-desk-textContainBtn');
