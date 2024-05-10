@@ -201,8 +201,8 @@
       // swiper 2 ############################################################################################################
       .swiper-container {
         width: 100%;
-        margin-left: 0.625rem; // заменено 10px на 0.625rem
-      
+        margin-left: 1.5rem; // заменено 10px на 0.625rem
+        
         .mySwiper2 {
           width: 100%;
           // margin-left: -1.25rem; // заменено -20px на -1.25rem
@@ -316,7 +316,7 @@
     grid-template-columns: repeat(4, minmax(15rem, 1fr)); // заменено 240px на 15rem
     grid-template-rows: repeat(1, 1fr);
     gap: 1.25rem; // заменено 20px на 1.25rem
-    margin-left: 0;
+    // margin-left: 0;
     margin-right: 0;
     margin-top: 0.9375rem; // заменено 15px на 0.9375rem
 
