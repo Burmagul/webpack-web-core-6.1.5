@@ -239,7 +239,7 @@
               }
       
               .slide-type2-desk-showSlide {
-                display: none;
+                display: none !important;
                 gap: 1.25rem; // заменено 20px на 1.25rem
                 cursor: pointer;
                 transition: color 0.3s;
@@ -279,7 +279,7 @@
         }
       
         .main__body-brendText-container2 {
-          display: none;
+          display: none !important;
         }
       
         .main__body-brendText-ipadContainer2 {
