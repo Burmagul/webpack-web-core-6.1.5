@@ -1,20 +1,26 @@
- 
- @import "./main__colors";
 
- @mixin main__bodyIpad{
+@import "./main__colors";
+
+@mixin main__bodyIpad{
     width: 100%;
     height: 100%;
     margin: 0;
     margin-right: 0;
     margin-left: 0;
     overflow-x: hidden;
+    position: fixed;
 
-    .main__header-menuModal-deskTope-contact{
-        display: none;
-    }
-
+.main{
+    width: 100%;
+    height: 100%;
 .destTope-Contain{
+    width: 100% !important;
+    height: 100% !important;
     margin-right: 0px;
+}
+
+.main__header-menuModal-deskTope-contact{
+    display: none;
 }
 
     .main__body-title-container{
@@ -113,6 +119,9 @@
 }
         .main__body-IpadContainer{
         display: flex;
+        width: auto;
+        height: auto;
+        margin-left: 1.625rem;
         margin-top: 40px;
         .main__body-text-Ipadcontainer{
             width: 100%;
@@ -121,14 +130,15 @@
             flex-direction: column;
 
             .main__body-Ipadtext{
-                height: 208;
+                width: auto;
+                height: auto;
                 overflow-x: hidden;
                 overflow-y: hidden;
-                margin-left: 24px;
+                margin-left: 1rem;
                 margin-top: 0;
                 white-space: pre-line;
                 font-family: "TT Lakes Neue Trial";
-                font-size: 14px;
+                font-size: 1rem;
                 line-height: 18px;
                 letter-spacing: 0.20000000298023224px;
                 color:  $titleColor;
@@ -140,11 +150,11 @@
                 display: block;
                 overflow-x: hidden;
                 overflow-y: hidden;
-                margin-left: 24px;
+                margin-left: 15px;
                 margin-top: 0;
                 white-space: pre-line;
                 font-family: "TT Lakes Neue Trial";
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 18px;
                 letter-spacing: 0.20000000298023224px;
                 color:  $titleColor;
@@ -181,7 +191,7 @@
             width: 340px;
             height: 208px;
             border-radius: 20px;
-            
+            margin-right: 1.7rem;
         }
         .main__body-brendText-Ipadcontainer{
         width: 100%;
@@ -203,21 +213,31 @@
         }
 //  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№ swiper  - 2 ###################################################
         .swiper-container{
-            width: 100%;
+            width: auto;
+            justify-content: center;
+            align-items: center;
             .telehponSlid{
                 display: none;
             }
-
-            .swiperIpad{
+            .mySwiper2{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .swiperIpad {
                 width: 100%;
                 display: grid;
+                gap: 6px;
+                grid-template-columns: repeat(3, minmax(240px, 1fr));
+                grid-template-rows: repeat(1, 1fr);
                 justify-content: center;
-                grid-template-columns: repeat(3, 224px);
-                grid-template-rows: repeat(2, 1fr);
-                gap: 8px;
-                margin-left: 0;
-                margin-right: 0;
-                margin-top: -20px;
+                align-items: center;
+                margin-left: 1rem;
+                // margin-right: -1rem;
+                margin-top: 15px;
+            
+            
             .swiper-slide { 
             
                 &.slide-type2{
@@ -233,16 +253,14 @@
                 background-color: $backgColor;
                 cursor: pointer;
                 transition: color 0.3s; 
-              
-              &.slide-type2:hover {
+            
+            &.slide-type2:hover {
                 background-color: rgb(38, 38, 190); /* Пример стиля, который вы можете настроить под свой дизайн */
             }
             }
             } .swiper-slide.slide-type2.nIpad{
                 display: none;
             }
-            
-            
             .main_container-iconLogo{
                 margin-left: 30px;
             }
@@ -250,23 +268,9 @@
             .main_container-iconGo{
                 margin-right: 20px;
             }
-            .slide-type2-desk-showSlide{
-                display: none;
-                gap: 8px;
-                cursor: pointer;
-                transition: color 0.3s; 
-              
-              .slide-type2:hover {
-                background-color: rgb(38, 38, 190); /* Пример стиля, который вы можете настроить под свой дизайн */
-            }
-            }
-            .slide-type2-desk-showSlide .swiper-slide:last-child {
-                display: none;
-            }
+        
 
-           
-
-            }
+            }}
             .main__body-reed-showContainer{
                 display: flex;
                 align-items: center;
@@ -289,6 +293,43 @@
             .swiper-pagination2{
                 display: none !important;
             }
+        }.slide-type2-desk-showSlide{
+            display: none;
+            grid-template-columns: repeat(3, minmax(240px, 1fr));
+            grid-template-rows: repeat(1, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin-left: 1rem;
+            gap: 6px;
+            cursor: pointer;
+            transition: color 0.3s; 
+            .showSlide-slide-type2{
+                flex: none;
+                width: 224px !important;
+                height: 72px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 25px;
+                border-radius: 6px;
+                border: $slideType2Border;
+                background-color: $backgColor;
+                cursor: pointer;
+                transition: color 0.3s;   
+                
+                .main_container-iconLogo{
+                    margin-left: 20px;
+                }
+                .main_container-iconGo{
+                    margin-right: 20px;
+                }
+            }
+        .showSlide-slide-type2:hover {
+            background-color: rgb(38, 38, 190); /* Пример стиля, который вы можете настроить под свой дизайн */
+        }
+        }
+        .slide-type2-desk-showSlide .showSlide-slide-type2:last-child {
+            display: none;
         }
         .slide-type2-showBtn{
             width: 140px;
@@ -303,11 +344,12 @@
         border-radius: 4px;
         margin-top: 30px;
         display: flex;
-                img{
-                  margin-right: 8px;
-                  margin-top: 3px;
-                  width: 15px;
-                  height: 15px;
+                
+        img{
+                margin-right: 8px;
+                margin-top: 3px;
+                width: 15px;
+                height: 15px;
                 }
         }
         .main__body-brendText-container2{
@@ -321,7 +363,6 @@
             margin-top: 36px;
         background: $linearGradient;
     
-        
             .main__body-brend-text{
                 font-family: "TT Lakes Neue Trial";
                 font-size: 16px;
@@ -346,73 +387,73 @@
         justify-content: center;
         grid-template-columns: repeat(3, minmax(240px, 1fr)); /* Измененная ширина столбцов */
         grid-template-rows: repeat(1, 1fr);
-        gap: 6px;
-        margin-left: 0;
-        margin-right: 0;
+        gap: 10px;
+        margin-left: 0.5rem;
+        // margin-right: -1rem;
         margin-top: 15px;
 
         
-          .swiper-slide{
-              &.slide-type3{
-                  display: none;
-                  }
-          &.slide-type3.ipad{
-              width: 230px !important;
-              height: 160px !important;
-              margin-left: 10px;
-              margin-right: 0px !important;
-              display: flex !important;
-              justify-content: center;
-              flex-direction: column;
-              background-color:$backgColor;
-              border: $slideType2Border;
-              border-radius: 6px;
-              cursor: pointer;
-              transition: color 0.3s; 
+        .swiper-slide{
+            &.slide-type3{
+                display: none;
+                }
+        &.slide-type3.ipad{
+            width: 230px !important;
+            height: 160px !important;
+            margin-right: 0px !important;
+            display: flex !important;
+            justify-content: center;
+            flex-direction: column;
+            background-color:$backgColor;
+            border: $slideType2Border;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: color 0.3s; 
             
-          &.ipad:hover{
+        &.ipad:hover{
             background-color: rgb(38, 38, 190); /* Пример стиля, который вы можете настроить под свой дизайн */
 
-          }
-      
-              .slide-type3-text{
-                  font-family: "TT Lakes Neue Trial";
-                  font-size: 16px;
-                  margin-left: 16px;
-                  line-height: 24px;
-                  letter-spacing: -0.20000000298023224px;
-                  margin-right: 40px;
-                  margin-bottom: 65px;
-                  color:  $titleColor;
-              }
-          .slide-type3-icon{
-                      width: 40px;
-                      height: 40px;
-                      margin-left: 165px;
-                      margin-bottom: 25px;
-              }
-          }
-      }
-      .swiper-pagination{
+        }
+    
+            .slide-type3-text{
+                font-family: "TT Lakes Neue Trial";
+                font-size: 16px;
+                margin-left: 16px;
+                line-height: 24px;
+                letter-spacing: -0.20000000298023224px;
+                margin-right: 40px;
+                margin-bottom: 65px;
+                color:  $titleColor;
+            }
+        .slide-type3-icon{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 165px;
+                    margin-bottom: 25px;
+            }
+        }
+    }
+    .swiper-pagination{
         display: none !important;
-      }
-      
-      } 
-      .swiper-wrapper .swiper-slide:last-child {
+    }
+    
+    } 
+    .swiper-wrapper .swiper-slide:last-child {
         display: none;
-      }
-      
+    }
+    
     .swiper-container.swiper-wrapper.opened {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      font-family: "TT Lakes Neue Trial";
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "TT Lakes Neue Trial";
+    margin-left: 1rem;
     }
 
-      .swiper-slide.slide-type3.opened {
+    .swiper-slide.slide-type3.opened {
         width: 230px !important;
         height: 160px !important;
-        margin-left: 10px;
+        margin-left: 5px;
         display: flex !important;
         justify-content: center;
         flex-direction: column;
@@ -421,32 +462,32 @@
         border-radius: 6px;
         cursor: pointer;
         transition: color 0.3s; 
-      
-      &.opened:hover {
+    
+    &.opened:hover {
         background-color: rgb(38, 38, 190);
     }
     }
     
     .swiper-slide.slide-type3.ipad.opened {
-      width: 230px !important;
-      height: 160px !important;
-      margin-left: 10px;
-      display: flex !important;
-      justify-content: center;
-      flex-direction: column;
-      background: $backgColor;
-      border: $slideType2Border;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: color 0.3s; 
-      font-family: "TT Lakes Neue Trial";
+    width: 230px !important;
+    height: 160px !important;
+    margin-left: 5px;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    background: $backgColor;
+    border: $slideType2Border;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color 0.3s; 
+    font-family: "TT Lakes Neue Trial";
     
     &.ipad.opened:hover {
-      background-color: rgb(38, 38, 190);
-  }
+    background-color: rgb(38, 38, 190);
+}
 }
 
-  .swiper-slide.slide-type3.ipadDesk.opened .slide-type3-icon {
+.swiper-slide.slide-type3.ipadDesk.opened .slide-type3-icon {
     width: 40px;
     height: 40px;
     margin-left: 175px;
@@ -455,11 +496,13 @@
 }
 .swiper-slide.slide-type3.ipadDesk.opened{
 p{
-    margin-bottom: 60px !important;
-    font-size: 18px;
+    font-family: "TT Lakes Neue Trial";
+    margin-bottom: 65px !important;
+    margin-left: 16px;
+    font-size: 16px;
     font-weight: 0;
     letter-spacing: -0.20000000298023224px;
-    color: $titleColor;
+    color: $titleColor !important;
 }
 }
     .swiper-slide.slide-type3.desk.opened .slide-type3-text {
@@ -532,32 +575,33 @@ margin: 0;
 margin-top: 30px;
 
 .main__body-ipadFooterTitle {
-    font-family: "TT Lakes Neue Trial";
-    padding-top: 20px;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    color: $swiperColor;
-    margin-left: 37px;
-    display: grid;
     width: auto;
+    font-family: "TT Lakes Neue Trial";
+    padding-top: 1.25rem; /* 20px в rem */
+    font-size: 0.875rem; /* 14px в rem */
+    line-height: 1.125rem; /* 18px в rem */
+    letter-spacing: 0.02rem; /* 0.2px в rem */
+    color: $swiperColor; /* Предполагается, что переменная $swiperColor уже определена */
+    margin-left: 2.3125rem; /* 37px в rem */
+    display: grid;
     grid-template-rows: repeat(1, auto);
-    grid-template-columns: repeat(3, 265px);
+    grid-template-columns: repeat(3, 33.333%); /* 265px в rem */
     cursor: pointer;
     transition: color 0.3s; 
-  
-  &:hover {
+    &:hover {
     color: rgb(38, 38, 190);
 }
 
-    .ipadFooter-form-srok{
-        width: 50px;
-        margin-left: -75px;
-    }
-    .ipadFooter-form-price{
-        width: 50px;
-        margin-left: 55px;
-    }
+.ipadFooter-form-srok {
+    width: 4.125rem; /* 50px в rem */
+    margin-left: -2rem; /* -75px в rem */
+}
+
+.ipadFooter-form-price {
+    width: 6.125rem; /* 50px в rem */
+    margin-left: 4.6375rem; /* 55px в rem */
+}
+
 }
 
 .main__body-ipadFooter-form {
@@ -678,5 +722,6 @@ display: none;
 
 .main__body-footer{
     display: none;
+}
 }
 }

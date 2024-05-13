@@ -11,7 +11,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 940px; 
+        height: 100%; 
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -55,14 +55,12 @@
 
     .main__header-menuModal-contact-call .menuModal-contact-call-body {
         width: 443px;
-        height: 940px;
-        overflow-y: auto;
+        height: 100%;
         background-color:$backgColor !important; 
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
         overflow-x: hidden;
 }
 
-  
     .main__header-menuModal-contact-call input {
         width: calc(100% - 50px) !important; 
         height: 48px;

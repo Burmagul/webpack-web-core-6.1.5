@@ -2,6 +2,7 @@
 
 @mixin main__header{
     width: 100%;
+    height: 100%;
     margin: 0;
     margin-left: 0;
     margin-right: 0;
@@ -47,8 +48,7 @@
     }
     .main__header-ipadIcons{
 display: none;
-    }
-    
+    }  
 }
     .main__header-group{
         width: 96.55px;
@@ -64,27 +64,27 @@ display: none;
 .main__header-repair{
     width: 40px;
     height: 40px;
-    transition: filter 0.3s; /* Плавный переход фильтра для изображения */
+    transition: filter 0.3s; 
 
         &:hover {
-    filter: brightness(70%); /* Пример изменения яркости изображения */
+    filter: brightness(70%); 
 }
 }
 
 .main__header-checkstatus{
     width: 40px;
     height: 40px;
-    transition: filter 0.3s; /* Плавный переход фильтра для изображения */
+    transition: filter 0.3s; 
 
         &:hover {
-    filter: brightness(70%); /* Пример изменения яркости изображения */
+    filter: brightness(70%); 
 }
 }}
 
 // 1 - Модалка  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№#########################################
 
 .main__header-menuModal{
-        all: unset;
+        // all: unset;
         width: 100% !important;
         height: 100% !important;
         display: none;
@@ -95,17 +95,27 @@ display: none;
         .main__header-menuModal-header{
         display: flex;
         border: none transparent;
+        .menuModal-closeBtn{
+            width: 40px;
+            height: 40px;
+            border: 0cap;
+            border-radius: 50px;
+            margin-top: 24px;
+            margin-left: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
 .main__header-menuModal-header-close{
     width: 40px;
     height: 40px;
-    margin-top: 24px;
-    margin-left: 16px;
     transition: filter 0.3s; /* Плавный переход фильтра для изображения */
 
         &:hover {
     filter: brightness(70%); /* Пример изменения яркости изображения */
 }
-    }
+}
+}
 
 .main__header-menuModal-header-group{
     width: 97px;
@@ -130,7 +140,6 @@ display: none;
 
 .main__header-menuModal-menu{
     width: 214px;
-    height: 100%;
     margin-top: 35px;
     
     .main__header-menuModal-menu-focusText-Container{
@@ -166,9 +175,9 @@ p{
 }
 .main__header-menuModal-contact{
     width: 196px;
-    height: 100%;
+    // height: 100%;
+    margin-top: 100px;
     margin-left: 24px !important;
-    // margin-top: 10px !important;
 
     .main__header-menuModal-contact-iconsBtns{
         display: flex;
@@ -181,9 +190,7 @@ p{
 font-size: 16px;
 line-height: 24px;
 letter-spacing: -0.20000000298023224px;
-
-    }
-
+}
 
 .main__header-menuModal-contact-number{
     font-family:  "TT Lakes Neue Trial";
@@ -222,7 +229,6 @@ letter-spacing: -0.20000000298023224px;
     }
 }
 
-
 .main__header-menuModal-contact-profil{
     width: 40px;
     height: 40px;
@@ -232,7 +238,7 @@ letter-spacing: -0.20000000298023224px;
         &:hover {
     filter: brightness(70%); 
 }
-    }
+}
 
     .main__header-menuModal-lang{
     display: flex;
@@ -241,21 +247,19 @@ letter-spacing: -0.20000000298023224px;
     color: $swiperColor;
     }
     } }
-  
 }
-
 
 // 2 - Модалка  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№###################################################
 
 .main__header-menuModal-contact-call{
     display: none;
     width: 100%;
-    height: 676px;
+    height: 100%;
     background-color:  $backgColor;
     overflow-x: hidden;
     border-style: none !important;
     box-shadow: none;
-   
+
     .main__header-menuModal-contact-call-close{
         width: 40px;
         height: 40px;
@@ -265,7 +269,7 @@ letter-spacing: -0.20000000298023224px;
         align-items: center;
         justify-content: center;
         border: none;
-        border-radius: 50%;
+        border-radius: 50% !important;
 
         img{
             margin: 0;
@@ -277,12 +281,13 @@ letter-spacing: -0.20000000298023224px;
         }
     }
     .main__header-menuModal-contact-call-close1{
-      display: none;
+    display: none;
         }
         
 .main__header-menuModal-contact-call-titleContainer{
         display: flex;
         margin-top: 30px;
+
         .main__header-menuModal-contact-call-title{
             font-family: "TT Lakes Neue Trial";
             font-size: 24px;
@@ -320,8 +325,6 @@ letter-spacing: -0.20000000298023224px;
     span{
     color:  $spanPink;
     }
-    
-  
 }
 .menuModal-contact-container-footer2{
     display: none !important;
@@ -332,21 +335,21 @@ height: 32px;
 margin-top: 19px;
 margin-left: 160px;
 }
-
 }
-
 
 // 3 - Модалка №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№##############################################
 
 .menuModal-contact-container{
 background-color:  $backgColor;
 display: none;
+flex-direction: column;
 width: 100%;
-height: 750px !important;
+height: 100%;
 overflow-x: hidden;
 border-style: none  ;
-
-
+.main__header-menuModal-contact-call-close2{
+    display: none;
+}
 
 
 .menuModal-contact-container-iconClose{
@@ -368,9 +371,12 @@ border-style: none  ;
     }
     }
 }
-
+.menuModal-contact-container-body{
+margin-left: 0;
+display: flex;
+flex-direction: column;
 .akjolClose{
-    display: none;
+    display: none !important;
 }
     .menuModal-contact-container-iconHilight{
     width: 4px;
@@ -379,7 +385,6 @@ border-style: none  ;
     left: 4px;
     }
     .menuModal-contact-container-Headercont{
-        margin-top: -40px;
         .menuModal-contact-container-title{
             font-family: "TT Lakes Neue Trial" ;
             font-size: 24px;
@@ -387,7 +392,7 @@ border-style: none  ;
             letter-spacing: -0.6000000238418579px;
             text-align: left;
             color:  $titleColor;
-            margin-top: -37px;
+            margin-top: -57px;
             font-weight: 700;
             margin-left: 16px;
         }
@@ -451,6 +456,7 @@ width: 136px;
 height: 32px;
 margin-top: 19px;
 margin-left: 160px;
+}
 }
 
 }

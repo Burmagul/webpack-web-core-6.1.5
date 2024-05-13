@@ -52,8 +52,9 @@ pagination: {
 // console.log(Swiper )
 
 // ################################   Читать дольше desktop #################################
+
 let svgImage = document.createElement('img');
-svgImage.src = './src/icons/icon.svg'; // Установка атрибута src для изображения
+svgImage.src = '/icons/icon.svg'; // Установка атрибута src для изображения
 
 document.addEventListener('DOMContentLoaded', function() {
     const showTextBtn = document.querySelector('.main__body-brend-desk-textContainBtn');
@@ -62,9 +63,11 @@ document.addEventListener('DOMContentLoaded', function() {
     showTextBtn.addEventListener('click', function() {
         showText.classList.toggle('show');
         if (showText.classList.contains('show')) {
-            showTextBtn.innerHTML = `  &nbsp; <img src="./src/icons/icon.svg" alt="Иконка">  &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`; 
+
+        showTextBtn.innerHTML = `  &nbsp; ${svgImage.outerHTML}  &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`;
+
         } else {
-            showTextBtn.innerHTML = `<img src="./src/icons/icon.svg" alt="Иконка">  Читать далее`; 
+        showTextBtn.innerHTML = `<img ${svgImage.outerHTML}  Читать далее`; 
         }
     });
 });
@@ -80,9 +83,9 @@ document.addEventListener('DOMContentLoaded', function() {
     showTextBtn2.addEventListener('click', function() {
         showText2.classList.toggle('show');
         if (showText2.classList.contains('show')) {
-            showTextBtn2.innerHTML = `  &nbsp; <img src="./src/icons/icon.svg" alt="Иконка">   &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`; 
+            showTextBtn2.innerHTML = `  &nbsp; ${svgImage.outerHTML}   &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`; 
         } else {
-            showTextBtn2.innerHTML = `<img src="./src/icons/icon.svg" alt="Иконка">   Читать далее`; 
+            showTextBtn2.innerHTML = `<img ${svgImage.outerHTML}    Читать далее`; 
         }
     });
 });
@@ -99,9 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Изменяем текст на кнопке в зависимости от наличия класса 'show'
             if (showText1.classList.contains('show')) {
-                btn.innerHTML = `  &nbsp; <img src="./src/icons/icon.svg" alt="Иконка">   &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`; 
+                btn.innerHTML = `  &nbsp; ${svgImage.outerHTML}    &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`; 
             } else {
-                btn.innerHTML = `<img src="./src/icons/icon.svg" alt="Иконка">   Читать далее`; 
+                btn.innerHTML = `<img ${svgImage.outerHTML}   Читать далее`; 
             }
         });
     });
@@ -116,11 +119,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showBtn.addEventListener('click', function() {
         if (slideToShow.style.display === 'none' || slideToShow.style.display === '') {
-            slideToShow.style.display = 'flex';
-            showBtn.innerHTML = `  &nbsp; <img src="./src/icons/icon.svg" alt="Иконка">   &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`;
+            slideToShow.style.display = 'grid';
+            showBtn.innerHTML = `  &nbsp; ${svgImage.outerHTML}    &nbsp;  &nbsp;  &nbsp;  &nbsp;  Скрыть`;
         } else {
             slideToShow.style.display = 'none';
-            showBtn.innerHTML = `<img src="./src/icons/icon.svg" alt="Иконка">   Показать все`;
+            showBtn.innerHTML = `<img ${svgImage.outerHTML}    Показать все`;
         }
     });
 });
@@ -151,7 +154,7 @@ button.addEventListener("click", function () {
         });
     }
     
-    button.innerHTML = isOpen ? `<img src="./src/icons/icon.svg" alt="Иконка">  &nbsp; &nbsp; &nbsp; Показать все` : ` &nbsp; &nbsp;<img src="./src/icons/icon.svg" alt="Иконка">  &nbsp; &nbsp; &nbsp; &nbsp; Скрыть`;
+    button.innerHTML = isOpen ? `<img ${svgImage.outerHTML}   &nbsp; &nbsp; &nbsp; Показать все` : ` &nbsp; &nbsp; ${svgImage.outerHTML}   &nbsp; &nbsp; &nbsp; &nbsp; Скрыть`;
 
     isOpen = !isOpen;
 });
