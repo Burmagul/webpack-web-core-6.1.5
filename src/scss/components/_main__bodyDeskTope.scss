@@ -57,6 +57,10 @@
           margin-right: 0.625rem; 
         }
       }
+      .main__header-repair, .main__header-checkstatus{
+width: 8%;
+height: 8%;
+      }
     }
   
   .main__headerIcons{
@@ -121,6 +125,9 @@
       opacity: 1;
     }
   }
+  .swiper-style:last-child{
+margin-right: 5rem;
+  }
 }
 
 .main__body-brend-desk-textContain {
@@ -176,12 +183,14 @@
   }
 
   .main__body-Ipad-logoPicture {
-    width: 33.209rem; 
-    height: 19.1875rem; 
-    border-radius: 0.9375rem; 
-    margin-left: 1rem; 
-    margin-right: 25px;
-  }
+    width: 40%; 
+    height: auto; 
+    max-width: 100%; 
+    border-radius: 3%; 
+    margin-left: 1%; 
+    margin-right: 2.5%; 
+}
+
 }
 
 .main__body-brendText-DeskTope-container {

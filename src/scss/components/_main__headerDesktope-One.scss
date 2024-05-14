@@ -6,7 +6,7 @@
   .main__header-menuModal-deskTope-contact {
   display: flex;
   flex-direction: column;
-  width: 276px; /* Примерная ширина сайт-бара */
+  width: 17.25rem; /* Примерная ширина сайт-бара */
   height: 100%;
   box-shadow: none;
   overflow: hidden;
@@ -83,18 +83,16 @@
             }
         }
     }
-    
-  }
-  
+    }
+
 }
 
   .main__header-menuModal-contact{
-    // display: flex !important;
     width: 196px;
-    // height: 100%;
-margin-left: 10px;    
+    margin-top: 20px;
+    margin-left: 10px;    
     .main__header-menuModal-contact-iconsBtns{
-        display: flex;
+    display: flex;
 margin-top: 20px;
 margin-left: 20px;
 
@@ -135,8 +133,6 @@ margin-left: 20px;
            /* Применение стилей при фокусировке */
     }
 }
-
-
 
 .main__header-menuModal-contact-profil{
     width: 40px;

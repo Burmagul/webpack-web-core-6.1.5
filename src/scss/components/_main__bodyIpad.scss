@@ -188,10 +188,12 @@
         display: none;
     }
         .main__body-Ipad-logoPicture{
-            width: 340px;
-            height: 208px;
-            border-radius: 20px;
-            margin-right: 1.7rem;
+            width: 65%; 
+            height: auto; 
+            max-width: 100%; 
+            border-radius: 3%; 
+            margin-left: 1%; 
+            margin-right: 2.5%; 
         }
         .main__body-brendText-Ipadcontainer{
         width: 100%;

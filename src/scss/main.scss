@@ -40,7 +40,6 @@
 
 @media screen and (min-width: 1366px) {
   html, body {
-    font-size: 16px; /* базовый размер шрифта */
     width: 100% !important;
     height: 100%;
     .main{
@@ -53,21 +52,12 @@
       height: 100%;
       margin:0;
       padding: 0 !important;
-
-    display: flex;
     flex-direction: row !important;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(248, 248, 248, 1);
     @include main__headerDesktope-One;
-    // @include main__headerDesktope-One;
     @include main__modalka1;
-    // @include main__modalka1;
     @include main__modalka2;
-    // @include main__modalka2;
     @include main__bodyDeskTope;
-    // @include main__bodyDeskTope;
   }
   }
 }
