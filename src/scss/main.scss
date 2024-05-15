@@ -54,6 +54,20 @@
       padding: 0 !important;
     flex-direction: row !important;
     overflow-x: hidden;
+
+
+    .destTope-Contain {
+      margin-left: 0; /* Отступ слева становится 0 */
+      width: 100%; /* Занимает всю доступную ширину */
+  }
+
+  .main__header-menuModal-deskTope-contact {
+      width: 100%; /* Занимает всю доступную ширину */
+      height: auto; /* Автоматическая высота */
+      position: relative; /* Изменение позиционирования */
+  }
+
+
     @include main__headerDesktope-One;
     @include main__modalka1;
     @include main__modalka2;

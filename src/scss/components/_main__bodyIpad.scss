@@ -231,7 +231,7 @@
                 width: 100%;
                 display: grid;
                 gap: 6px;
-                grid-template-columns: repeat(3, minmax(240px, 1fr));
+                grid-template-columns: repeat(3, minmax(13%, 1fr));
                 grid-template-rows: repeat(1, 1fr);
                 justify-content: center;
                 align-items: center;
@@ -387,7 +387,7 @@
         width: 100% !important;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(3, minmax(240px, 1fr)); /* Измененная ширина столбцов */
+        grid-template-columns: repeat(3, minmax(13%, 1fr)); /* Измененная ширина столбцов */
         grid-template-rows: repeat(1, 1fr);
         gap: 10px;
         margin-left: 0.5rem;
