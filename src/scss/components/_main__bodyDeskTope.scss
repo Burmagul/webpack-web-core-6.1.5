@@ -549,16 +549,19 @@ margin-right: 5rem;
 
     .main__body-ipadFooterTitle {
       width: auto;
+      // display: flex;
+      // justify-content: space-between;
       font-family: "TT Lakes Neue Trial";
-      padding-top: 1.875rem; // заменено 30px на 1.875rem
-      font-size: 1.5vw; // заменено 14px на 0.875rem
-      line-height: 1.125rem; // заменено 18px на 1.125rem
-      letter-spacing: 0.0125rem; // заменено 0.2px на 0.0125rem
+      padding-top: 1.875rem; 
+      font-size: 1.5vw; 
+      line-height: 1.125rem; 
+      letter-spacing: 0.0125rem; 
       color: $swiperColor;
-      margin-left: 2rem; // заменено 30px на 1.875rem
+      margin-left: 2rem; 
       display: grid;
       grid-template-rows: repeat(1, auto);
-      grid-template-columns: repeat(3, 19.5rem);
+      grid-template-columns: repeat(4, 19vw);
+      column-gap: 50px;
       cursor: pointer;
       transition: color 0.3s;
     
